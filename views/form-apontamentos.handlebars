@@ -1,0 +1,69 @@
+<div class="content p-1">
+    <div class="list-group-item">
+        <div class="d-flex">
+            <div class="mr-auto p-2">
+                <h2 class="display-4 titulo">Registrar Apontamento</h2>
+            </div>
+            <div class="p-2">
+                <a href="/admin/usuarios">
+                    <button class="btn btn-outline-info btn-sm">
+                        Listar
+                    </button>
+                </a>
+            </div>
+        </div>
+        {{>_msg}}
+        <hr>
+        <form action="/add-apontamentos" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span> Nome</label>
+                    <input name="id_usuario" type="text" class="form-control" id="nome" placeholder="Nome completo" value="" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Silo</label>
+                    <input name="silo" type="text" class="form-control" id="" placeholder="Silo" value="" required>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Produto</label>
+                    <input name="produto" type="text" class="form-control" id="" placeholder="Produto" value="" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Quantidade (TN)</label>
+                    <input name="quantidade" type="text" class="form-control" id="" placeholder="Quantidade" value="" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Lote</label>
+                    <input name="lote" type="text" class="form-control" id="" placeholder="Lote" value="" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Data</label>
+                    <input name="data" type="text" class="form-control" id="" placeholder="Data" value="" required>
+                </div>
+            </div>
+
+            
+
+            <p>
+                <span class="text-danger">* </span>Campo obrigatório
+            </p>
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        </form>
+    </div>
+</div>
