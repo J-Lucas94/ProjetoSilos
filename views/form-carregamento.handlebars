@@ -1,3 +1,4 @@
+
 <div class="content p-1">
     <div class="list-group-item">
         <div class="d-flex">
@@ -5,7 +6,7 @@
                 <h2 class="display-4 titulo">Registrar Carregamento</h2>
             </div>
             <div class="p-2">
-                <a href="/admin/usuarios">
+                <a href="/movimentos">
                     <button class="btn btn-outline-info btn-sm">
                         Listar
                     </button>
@@ -18,21 +19,35 @@
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label><span class="text-danger">*</span> Nome</label>
-                    <input name="id_usuario" type="text" class="form-control" id="nome" placeholder="Nome completo" value="" required>
+                    <input name="id_usuario" type="text" class="form-control" id="nome" placeholder="Nome" value="" required>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label><span class="text-danger">*</span>Silo</label>
-                    <input name="silo" type="text" class="form-control" id="" placeholder="Silo" value="" required>
+                    <select name="silo" class="form-control" id="">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        </select>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label><span class="text-danger">*</span>Produto</label>
-                    <input name="produto" type="text" class="form-control" id="" placeholder="Produto" value="" required>
+                    <select name="produto" class="form-control" id="">
+                        <option>MP-001-1-03 Trioxido de Molibdênio</option>
+                        <option>I-002-2-03 Alumínio AT</option>
+                        <option>I-001-1-03 Ferro Silício</option>
+                        <option>I-003-1-03 Hematita</option>
+                        <option>MP-003-1-03 Scheelita</option>
+                        <option>I-002-1-02 Alumínio ICA</option>
+                        </select>
                 </div>
             </div>
 

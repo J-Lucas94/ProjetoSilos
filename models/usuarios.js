@@ -23,6 +23,11 @@ const Usuarios = db.define('usuarios', {
         }
     },
 
+    eAdmin:{
+        type: DataTypes.NUMBER,
+        default: 0
+    },
+
     email: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -35,6 +40,6 @@ const Usuarios = db.define('usuarios', {
 
 })
 
-// db.sync({alter:true})
+// Usuarios.sync({alter:true})
 
 module.exports = Usuarios

@@ -2,7 +2,7 @@
     <div class="list-group-item">
         <div class="d-flex">
             <div class="mr-auto p-2">
-                <h2 class="display-4 titulo">Usuários</h2>
+                <h2 class="display-4 titulo">Movimentos</h2>
             </div>
 
 
@@ -17,7 +17,12 @@
 
                         <th>Nome</th>
                         <th>Silo</th>
-                        <th class="text-center">Ações</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Lote</th>
+                        <th>Data</th>
+                        <th>Tipo de Movimento</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -31,22 +36,17 @@
                         <td>{{dataValues.quantidade}}</td>
                         <td>{{dataValues.lote}}</td>
                         <td>{{dataValues.data}}</td>
+                        <td>{{dataValues.tipo_movimentacao}}</td>
+                        
                         <td class="text-center">
                             <span class="d-none d-md-block">
 
-                                <a href="/admin/edit-usuario/{{id}}" class="btn btn-outline-warning btn-sm">Editar</a>
-                                <a href="/admin/del-usuario/{{id}}" class="btn btn-outline-danger btn-sm apagar_rg"
-                                    data-confirm="Tem certeza que deseja apagar o item selecionado?">Apagar</a>
+                                <a href="/edit-movimentos/{{dataValues.id}}" class="btn btn-outline-warning btn-sm">Editar</a>
+
                             </span>
                             <div class="dropdown d-block d-md-none">
-                                <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="acoesListar"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Ações
-                                </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="acoesListar">
-                                    <a class="dropdown-item" href="/admin/edit-usuario/{{id}}">Editar</a>
-                                    <a class="dropdown-item" href="/admin/del-usuario/{{id}}"
-                                        data-confirm="Tem certeza que deseja apagar o item selecionado?">Apagar</a>
+                                    <a class="dropdown-item" href="/edit-movimentos/{{dataValues.id}}">Editar</a>
                                 </div>
                             </div>
                         </td>

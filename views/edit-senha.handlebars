@@ -1,0 +1,26 @@
+<div class="content p-1">
+    <div class="list-group-item">
+        {{>_msg}}
+        <hr>
+        <form action="/update-senha-perfil" method="POST">
+         <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Senha</label>
+                    <input name="senha" type="password" class="form-control" id="senha" placeholder="Senha com minimo 6 caracteres" value=""required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label><span class="text-danger">*</span>Repetir Senha</label>
+                    <input name="rep_senha" type="password" class="form-control" id="rep_senha" placeholder="Digite novamente" value="" required>
+                </div>
+            </div>
+
+            <p>
+                <span class="text-danger">* </span>Campo obrigatório
+            </p>
+            <button type="submit" class="btn btn-warning">Salvar</button>
+        </form>
+    </div>
+</div>

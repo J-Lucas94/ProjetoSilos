@@ -2,7 +2,7 @@
     <div class="list-group-item">
         <div class="d-flex">
             <div class="mr-auto p-2">
-                <h2 class="display-4 titulo">Registrar Apontamento</h2>
+                <h2 class="display-4 titulo">Editar Carregamento</h2>
             </div>
             <div class="p-2">
                 <a href="/movimentos">
@@ -14,11 +14,11 @@
         </div>
         {{>_msg}}
         <hr>
-        <form action="/add-apontamentos" method="POST">
+        <form action="/add-carregamento" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label><span class="text-danger">*</span> Nome</label>
-                    <input name="id_usuario" type="text" class="form-control" id="nome" placeholder="Nome completo" value="" required>
+                    <input name="id_usuario" type="text" class="form-control" id="nome" placeholder="Nome" value="" required>
                 </div>
             </div>
 
@@ -35,7 +35,6 @@
                         </select>
                 </div>
             </div>
-
 
             <div class="form-row">
                 <div class="form-group col-md-12">
@@ -71,13 +70,12 @@
                     <input name="data" type="text" class="form-control" id="" placeholder="Data" value="" required>
                 </div>
             </div>
-
             
 
             <p>
                 <span class="text-danger">* </span>Campo obrigatório
             </p>
-            <button type="submit" class="btn btn-success">Cadastrar</button>
+            <button type="submit" class="btn btn-warning">Salvar</button>
         </form>
     </div>
 </div>
